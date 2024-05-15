@@ -89,11 +89,11 @@ a {
 }
 
 /* header- logo */
-.header .logo {
+
+.header .img-logo {
+    height: auto;
     width: auto;
-    margin: 2px;
-    padding: 15px;
-    padding-right: 25px;
+    padding: 10px 20px;
     float: right;
     display: block;
     font-size: 2em;
@@ -170,6 +170,10 @@ a {
     transform: rotate(45deg);
     top: 0;
 }
+
+
+
+
 
 /* mobil-størrelse, med header-menu */
 @media (min-width:48em) and (min-width:1024px) {

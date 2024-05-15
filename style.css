@@ -86,11 +86,11 @@ a {
 }
 
 /* header- logo */
-.header .logo {
+
+.header .img-logo {
+    height: auto;
     width: auto;
-    margin: 2px;
-    padding: 15px;
-    padding-right: 25px;
+    padding: 10px 20px;
     float: right;
     display: block;
     font-size: 2em;
