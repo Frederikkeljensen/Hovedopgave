@@ -25,6 +25,8 @@
 h1 {
     font-family: monospace;
     color: var(--font-headercolor);
+    margin-left: var(--spaceXLarge);
+    margin-top: var(--spaceLarge);
 }
 
 h2 {
@@ -45,6 +47,7 @@ body {
     margin: 0;
     background-color: var(--background-color);
     width: 100%;
+    background-image: url(images/background.png);
 }
 
 a {
