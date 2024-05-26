@@ -46,7 +46,8 @@ p {
 body {
     margin: 0;
     background-color: var(--background-color);
-    width: 100%;
+    width: auto;
+    height: auto;
     background-image: url(images/background.png);
 }
 
@@ -176,8 +177,88 @@ a {
     height: 100px;
     width: 100px;
     display: flex;
-    margin: var(--fontSizeXLarge);
     gap: 10px;
+}
+
+.text_header {
+    margin: 0;
+    padding-bottom: 10px;
+    /* Juster afstanden mellem overskrift og paragraf */
+}
+
+.text_item {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 5 - 20px);
+    /* Juster bredden på hver .text_item efter behov */
+    box-sizing: border-box;
+}
+
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    /* Tilføj denne linje for at sikre, at indholdet wrap'er hvis det ikke kan passe på én linje */
+    gap: 20px;
+    /* Juster afstanden mellem elementerne */
+    padding-left: 30px;
+    /* Tilføj mellemrum fra venstre side */
+}
+
+p {
+    margin: 0;
+}
+
+/* Styling af overskrifter */
+.section-heading {
+    margin-bottom: 20px;
+    /* Afstand under overskrift */
+}
+
+.subsection-heading {
+    margin-top: 20px;
+    /* Afstand over underoverskrift */
+    margin-bottom: 10px;
+    /* Afstand under underoverskrift */
+}
+
+/* Styling af afsnit */
+.demographic-info,
+.motivation-reason,
+.evaluation-info,
+.improvement-suggestion,
+.conclusion {
+    margin-bottom: 10px;
+    /* Afstand under afsnit */
+}
+
+/* Styling af sektioncontainer */
+.feedback-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 64%;
+}
+
+/* Styling af undersektioner */
+.feedback-section> {
+    margin-left: 30px;
+    /* Indrykning af undersektioner */
+}
+
+/* Ekstra stil for kontaktinformation */
+.contact-info {
+    background-color: var(--background-color);
+    border-radius: 5px;
+    height: auto;
+    width: auto;
+}
+
+.website-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.website-link:hover {
+    text-decoration: underline;
 }
 
 /* mobil-størrelse, med header-menu */

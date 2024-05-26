@@ -46,7 +46,8 @@ p {
 body {
     margin: 0;
     background-color: var(--background-color);
-    width: 100%;
+    width: auto;
+    height: auto;
     background-image: url(images/background.png);
 }
 
@@ -243,6 +244,23 @@ p {
 .feedback-section>* {
     margin-left: 30px;
     /* Indrykning af undersektioner */
+}
+
+/* Ekstra stil for kontaktinformation */
+.contact-info {
+    background-color: var(--background-color);
+    padding-top: 10px;
+    padding-left: 30px;
+    border-radius: 5px;
+}
+
+.website-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.website-link:hover {
+    text-decoration: underline;
 }
 
 /* mobil-størrelse, med header-menu */
