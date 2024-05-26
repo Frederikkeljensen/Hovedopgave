@@ -46,7 +46,8 @@ p {
 body {
     margin: 0;
     background-color: var(--background-color);
-    width: 100%;
+    width: auto;
+    height: auto;
     background-image: url(images/background.png);
 }
 
@@ -172,8 +173,20 @@ a {
 }
 
 /* body */
+.guide-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Juster denne værdi efter behov for at ændre afstanden mellem sektionerne */
+    padding-left: 30px;
+}
 
-
+.guide_section {
+    flex-basis: calc(50% - 10px);
+    /* To sektioner i hver række */
+    margin-bottom: 20px;
+    /* Juster denne værdi efter behov */
+}
 
 /* mobil-størrelse, med header-menu */
 @media (min-width:48em) and (min-width:1024px) {
