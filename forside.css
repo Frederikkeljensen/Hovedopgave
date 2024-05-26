@@ -172,6 +172,34 @@ a {
 }
 
 /* body */
+.welcome-section {
+    padding-top: 5px;
+    padding-left: 30px;
+}
+
+.content-overview {
+    padding-left: 30px;
+}
+
+.content-row {
+    margin-bottom: 30px;
+}
+
+.content-overview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Juster denne værdi efter behov for at ændre afstanden mellem sektionerne */
+    padding-left: 30px;
+}
+
+.content-section {
+    flex-basis: calc(33.33% - 10px);
+    /* Tre sektioner i hver række */
+    margin-bottom: 20px;
+    /* Juster denne værdi efter behov */
+    margin-top: 5%;
+}
 
 
 
