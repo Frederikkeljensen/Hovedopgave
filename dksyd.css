@@ -211,16 +211,9 @@ p {
 
 /* Feedback */
 /* Styling af overskrifter */
-.section-heading {
-    margin-bottom: 20px;
-    /* Afstand under overskrift */
-}
-
-.subsection-heading {
-    margin-top: 20px;
-    /* Afstand over underoverskrift */
-    margin-bottom: 10px;
-    /* Afstand under underoverskrift */
+.feedback-section_heading {
+    padding-left: 30px;
+    padding-top: 64%;
 }
 
 /* Styling af afsnit */
@@ -235,10 +228,12 @@ p {
 
 /* Styling af sektioncontainer */
 .feedback-section {
-    display: flex;
-    flex-direction: column;
-    padding-top: 62%;
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* To kolonner med lige bredde */
+    gap: 20px;
+    /* Mindre afstand mellem sektionerne */
+    padding-bottom: 20px;
 }
 
 /* Styling af undersektioner */
