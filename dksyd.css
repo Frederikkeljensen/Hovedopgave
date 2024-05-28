@@ -209,6 +209,7 @@ p {
     margin: 0;
 }
 
+/* Feedback */
 /* Styling af overskrifter */
 .section-heading {
     margin-bottom: 20px;
@@ -256,12 +257,27 @@ p {
 }
 
 .website-link {
-    color: #007bff;
+    font-size: 14px;
+    /* Juster størrelsen efter behov */
+    padding: 5px 10px;
+    /* Tilføj indre mellemrum */
+    background-color: var(--header-color);
+    /* Baggrundsfarve */
+    color: var(--font-headercolor);
+    /* Tekstfarve */
     text-decoration: none;
+    /* Fjern understregning */
+    border-radius: 5px;
+    /* Afrundede hjørner */
+    display: inline-block;
+    /* Gør linket til en inline-block */
+    transition: background-color 0.3s ease;
+    /* Glat overgang ved hover */
 }
 
 .website-link:hover {
-    text-decoration: underline;
+    background-color: #737373;
+    /* Mørkere baggrund ved hover */
 }
 
 /* mobil-størrelse, med header-menu */

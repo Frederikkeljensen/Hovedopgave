@@ -181,25 +181,39 @@ a {
     padding-left: 30px;
 }
 
-.content-row {
-    margin-bottom: 30px;
-}
-
 .content-overview {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* To kolonner med lige bredde */
     gap: 20px;
-    /* Juster denne værdi efter behov for at ændre afstanden mellem sektionerne */
+    /* Mindre afstand mellem sektionerne */
     padding-left: 30px;
 }
 
-.content-section {
-    flex-basis: calc(33.33% - 10px);
-    /* Tre sektioner i hver række */
-    margin-bottom: 20px;
-    /* Juster denne værdi efter behov */
-    margin-top: 5%;
+.content-overview h2 {
+    grid-column: 1 / -1;
+    /* Overskriften strækker sig over begge kolonner */
+    margin-bottom: 10px;
+    /* Mindre afstand under overskriften */
 }
+
+.content-section {
+    margin-bottom: 20px;
+    /* Justér denne værdi efter behov */
+}
+
+.content-section__title {
+    margin-top: 0;
+    /* Fjern topmargen fra h3 for at reducere afstanden */
+    margin-bottom: 5px;
+    /* Mindre afstand under h3 */
+}
+
+.content-section__description {
+    margin-top: 0;
+    /* Fjern topmargen fra p for at reducere afstanden */
+}
+
 
 
 
