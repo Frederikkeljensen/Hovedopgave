@@ -50,6 +50,7 @@ body {
     margin: 0;
     background-color: var(--background-color);
     width: 100%;
+    margin-bottom: 15px;
 }
 
 a {
@@ -330,6 +331,15 @@ a {
 .tools__highlight {
     font-weight: bold;
     /* Make the text bold */
+}
+
+.tools__button {
+    background-color: var(--header-color);
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    color: var(--font-color);
+    line-height: 25px;
 }
 
 /* Hashtag Usage underside */
