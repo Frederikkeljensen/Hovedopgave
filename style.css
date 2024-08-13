@@ -5,6 +5,7 @@
     --font-labelcolor: #1e1e1e;
     --header-color: #d3d6d7;
     --footer-color: #d3d6d7;
+    --background-color: rgb(195, 195, 195);
 
     /* Font size */
     --fontSizeXSmall: calc(var(--fontSizeMedium)/2);
@@ -32,6 +33,7 @@ h1 {
 h2 {
     font-family: monospace;
     color: var(--font-headercolor);
+    margin-left: var(--spaceXLarge);
 }
 
 h3 {
@@ -39,16 +41,15 @@ h3 {
 }
 
 p {
-    color: var(--font-pcolor);
+    color: var(--font-color);
     line-height: 25px;
+    margin-left: var(--spaceXLarge);
 }
 
 body {
     margin: 0;
     background-color: var(--background-color);
-    width: auto;
-    height: auto;
-    background-image: url(images/background.png);
+    width: 100%;
 }
 
 a {
@@ -93,12 +94,11 @@ a {
 
 .header .img-logo {
     height: auto;
-    width: auto;
-    padding: 10px 20px;
+    width: 115px;
+    padding: 5px;
     float: right;
     display: block;
     font-size: 2em;
-
 }
 
 /* header- hamburger-menu */
@@ -170,6 +170,176 @@ a {
 .header .menu-btn:checked~.menu-icon .nav-icon:after {
     transform: rotate(45deg);
     top: 0;
+}
+
+/* instagramTrends underside */
+.instagram-guide__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 135px;
+}
+
+.instagram-guide__item {
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 10px;
+    /* Sikrer afstand mellem billede og tekst */
+}
+
+.instagram-guide__item img {
+    width: 100%;
+    height: 210px;
+    /* Fast højde for alle billeder */
+    object-fit: cover;
+    /* Sikrer at billeder bevarer deres proportioner */
+}
+
+.instagram-guide__title {
+    padding: 10px;
+    margin: 0;
+    background-color: #DFDEEE;
+    border-radius: 50px;
+    font-size: var(--fontSizeMedium);
+    font-family: monospace;
+    text-align: center;
+}
+
+/* Instagram Guide - sektioner */
+.instagram-guide {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* 1 kolonne */
+    gap: 30px;
+    /* Afstand mellem sektioner */
+    margin-left: var(--spaceXLarge);
+}
+
+.instagram-guide__section {
+    background-color: #ded9d9;
+    font-size: var(--fontSizeMedium);
+    font-family: monospace;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 800px;
+    /* Begræns maksimal bredde på sektionerne */
+    margin: 0;
+    /* Ingen margin for at sikre venstre justering */
+    border: 1px solid #ccc;
+    /* Valgfri: Tilføj en grå kant for visuel adskillelse */
+}
+
+.instagram-guide__section li {
+    padding-bottom: 15px;
+    list-style: none;
+}
+
+.instagram-guide__section img {
+    width: 100%;
+    /* Billederne fylder nu hele containerens bredde */
+    max-width: 350px;
+    /* Reducerer maksimal bredde til 80% af containerens bredde */
+    height: auto;
+    /* Bevarer billedets proportioner */
+    padding-bottom: 15px;
+    /* Afstand til elementerne nedenfor */
+}
+
+#section1 .instagram-guide__section img {
+    max-width: 90px;
+    /* Maksimal bredde for billeder i section1 */
+}
+
+#section3 .instagram-guide__section img {
+    height: 900%;
+    /* Maksimal bredde for billeder i section3 */
+}
+
+.instagram-guide__section-image {
+    width: 100%;
+    max-width: none;
+    /* Ingen begrænsning på størrelsen */
+}
+
+.instagram-guide__section p {
+    margin: 0;
+    /* Fjern standard margin fra p- og ul-elementer */
+    padding: 10px 0;
+    /* Polstring omkring teksten */
+}
+
+.instagram-guide__hashtags-list {
+    text-align: center;
+}
+
+.instagram-guide__hashtag {
+    text-align: center;
+}
+
+.instagram-guide__section ul {
+    padding-left: 20px;
+    /* Indryk listepunkterne */
+    list-style: none;
+}
+
+.instagram-guide__reels-tip {
+    padding-bottom: 5px;
+    padding-top: 15px;
+}
+
+/* Design Tools underside */
+.tools {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    /* Centrer elementer horisontalt */
+    align-items: center;
+    /* Centrer elementer vertikalt */
+    padding-top: 20px;
+}
+
+.tools__image {
+    display: block;
+    margin: 0 auto;
+    /* Centrer billedet horisontalt */
+    text-align: center;
+    max-width: 150px;
+    /* Valgfrit: sæt en maksimal bredde */
+    padding-left: 10%;
+}
+
+.tools__name {
+    text-align: center;
+    /* Centrer teksten */
+    margin-top: 10px;
+}
+
+.tools__description {
+    margin-top: 10px;
+    /* Plads mellem navnet og beskrivelsen */
+    text-align: center;
+    /* Center teksten */
+    max-width: 300px;
+    /* Valgfri: begræns bredden af beskrivelsen for bedre læsbarhed */
+}
+
+.tools__highlight {
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+/* Hashtag Usage underside */
+.hashtag-section {
+    padding: 20px;
+}
+
+.hashtag-section__title {
+    font-size: 1.5em;
+    margin-top: 20px;
 }
 
 /* mobil-størrelse, med header-menu */
